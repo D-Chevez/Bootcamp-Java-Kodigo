@@ -1,6 +1,5 @@
 package calculator;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Menu {
@@ -62,56 +61,57 @@ public class Menu {
         while (continueOperation) {
             try {
                 double result = 0;
-                double num1, num2;
+                Number num1 = new Number(0);
+                Number num2 = new Number(0);
 
                 System.out.println("\n");
 
                 switch (op) {
                     case ADDITION:
                         System.out.print("Enter the first number: ");
-                        num1 = getDoubleInput();
+                        num1.setValue(getDoubleInput());
                         System.out.print("Enter the second number: ");
-                        num2 = getDoubleInput();
+                        num2.setValue(getDoubleInput());
                         result = Calculator.add(num1, num2);
-                        record.addOperation(num1 + " + " + num2 + " = " + result);
+                        record.addOperation(num1.getValue()+ " + " + num2.getValue() + " = " + result);
                         break;
                     case SUBTRACTION:
                         System.out.print("Enter the first number: ");
-                        num1 = getDoubleInput();
+                        num1.setValue(getDoubleInput());
                         System.out.print("Enter the second number: ");
-                        num2 = getDoubleInput();
+                        num2.setValue(getDoubleInput());
                         result = Calculator.subtract(num1, num2);
-                        record.addOperation(num1 + " - " + num2 + " = " + result);
+                        record.addOperation(num1.getValue()+ " - " + num2.getValue() + " = " + result);
                         break;
                     case MULTIPLICATION:
                         System.out.print("Enter the first number: ");
-                        num1 = getDoubleInput();
+                        num1.setValue(getDoubleInput());
                         System.out.print("Enter the second number: ");
-                        num2 = getDoubleInput();
+                        num2.setValue(getDoubleInput());
                         result = Calculator.multiply(num1, num2);
-                        record.addOperation(num1 + " * " + num2 + " = " + result);
+                        record.addOperation(num1.getValue()+ " * " + num2.getValue() + " = " + result);
                         break;
                     case DIVISION:
                         System.out.print("Enter the numerator: ");
-                        num1 = getDoubleInput();
+                        num1.setValue(getDoubleInput());
                         System.out.print("Enter the denominator: ");
-                        num2 = getDoubleInput();
+                        num2.setValue(getDoubleInput());
                         result = Calculator.divide(num1, num2);
-                        record.addOperation(num1 + " / " + num2 + " = " + result);
+                        record.addOperation(num1.getValue()+ " / " + num2.getValue() + " = " + result);
                         break;
                     case POWER:
                         System.out.print("Enter the base: ");
-                        num1 = getDoubleInput();
+                        num1.setValue(getDoubleInput());
                         System.out.print("Enter the exponent: ");
-                        num2 = getDoubleInput();
+                        num2.setValue(getDoubleInput());
                         result = Calculator.power(num1, num2);
-                        record.addOperation(num1 + " ^ " + num2 + " = " + result);
+                        record.addOperation(num1.getValue()+ " ^ " + num2.getValue() + " = " + result);
                         break;
                     case SQUARE_ROOT:
                         System.out.print("Enter the number: ");
-                        num1 = getDoubleInput();
+                        num1.setValue(getDoubleInput());
                         result = Calculator.squareRoot(num1);
-                        record.addOperation("sqrt(" + num1 + ") = " + result);
+                        record.addOperation("sqrt(" + num1.getValue()+ ") = " + result);
                         break;
                 }
 
