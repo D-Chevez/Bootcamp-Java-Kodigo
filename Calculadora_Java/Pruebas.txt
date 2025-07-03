@@ -1,0 +1,128 @@
+Archivo de Pruebas
+
+Este archivo contiene casos de prueba prácticos para verificar el correcto funcionamiento de la calculadora en consola, incluyendo pruebas con entradas inválidas (letras y símbolos).
+
+---------------------------------------------------
+Prueba 1: Suma
+Entrada:
+    Primer número: 5
+    Segundo número: 3
+Operación:
+    Suma
+Salida esperada:
+    Resultado: 8.0
+
+---------------------------------------------------
+Prueba 2: Resta
+Entrada:
+    Primer número: 10
+    Segundo número: 4
+Operación:
+    Resta
+Salida esperada:
+    Resultado: 6.0
+
+---------------------------------------------------
+Prueba 3: Multiplicación
+Entrada:
+    Primer número: 7
+    Segundo número: 6
+Operación:
+    Multiplicación
+Salida esperada:
+    Resultado: 42.0
+
+---------------------------------------------------
+Prueba 4: División
+Entrada:
+    Numerador: 20
+    Denominador: 5
+Operación:
+    División
+Salida esperada:
+    Resultado: 4.0
+
+---------------------------------------------------
+Prueba 5: División por cero (manejo de error)
+Entrada:
+    Numerador: 15
+    Denominador: 0
+Operación:
+    División
+Salida esperada:
+    Mensaje de error indicando que la división por cero no está permitida.
+
+---------------------------------------------------
+Prueba 6: Potencia
+Entrada:
+    Base: 2
+    Exponente: 3
+Operación:
+    Potencia
+Salida esperada:
+    Resultado: 8.0
+
+---------------------------------------------------
+Prueba 7: Raíz cuadrada
+Entrada:
+    Número: 16
+Operación:
+    Raíz Cuadrada
+Salida esperada:
+    Resultado: 4.0
+
+---------------------------------------------------
+Prueba 8: Raíz cuadrada de número negativo (manejo de error)
+Entrada:
+    Número: -9
+Operación:
+    Raíz Cuadrada
+Salida esperada:
+    Mensaje de error indicando que no se puede calcular la raíz cuadrada de un número negativo.
+
+---------------------------------------------------
+Prueba 9: Historial de operaciones
+Acción:
+    Consultar historial tras realizar múltiples operaciones.
+Salida esperada:
+    Lista de operaciones realizadas en orden con resultados correctos.
+
+---------------------------------------------------
+Prueba 10: Entrada de letra en lugar de número
+Entrada:
+    Primer número: cinco
+    Segundo número: 3
+Operación:
+    Suma
+Salida esperada:
+    Mensaje solicitando ingresar un número válido y reintento de la entrada sin cerrar el programa.
+
+---------------------------------------------------
+Prueba 11: Entrada con símbolos no válidos
+Entrada:
+    Primer número: @@@
+    Segundo número: ##
+Operación:
+    Multiplicación
+Salida esperada:
+    Mensaje solicitando ingresar un número válido y reintento de la entrada sin cerrar el programa.
+
+---------------------------------------------------
+Prueba 12: Entrada con espacio vacío
+Entrada:
+    Primer número: [Enter sin escribir nada]
+    Segundo número: 5
+Operación:
+    Resta
+Salida esperada:
+    Mensaje solicitando ingresar un número válido y reintento de la entrada sin cerrar el programa.
+
+---------------------------------------------------
+Prueba 13: Secuencia de operaciones para prueba de estabilidad
+Acción:
+    Realizar suma, multiplicación, división, potencia y raíz cuadrada de forma secuencial.
+Salida esperada:
+    Cada operación con su resultado correcto y agregado al historial.
+
+---------------------------------------------------
+Estas pruebas permiten validar tanto las funcionalidades operacionales de la calculadora como el manejo robusto de entradas inválidas, mejorando la calidad del proyecto.
