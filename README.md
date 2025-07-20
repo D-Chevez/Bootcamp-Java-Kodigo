@@ -1,105 +1,96 @@
-# 🔗 Java Simple Linked List
+# 🎓 Java Bootcamp Projects - Daniel Chevez
 
-This project implements a **singly linked list in Java**, using object-oriented programming principles. It is designed for academic practice with clean structure, interaction via console, and unit tests using JUnit.
-
----
-
-## 📌 Features
-
-✅ Add new elements at the **beginning** of the list  
-✅ **Delete** elements from the beginning  
-✅ **Search** for an element and return its **position**  
-✅ **Print** the current state of the list  
-✅ Show if the list is **empty** or display its **size**  
-✅ Clean and modular design using:
-
-- `Node` (list node representation)
-- `LinkedList` (list logic and operations)
-- `Main` (console menu interface)
-- `LinkedListTest` (unit tests using JUnit 5)
+Welcome to my **Java Bootcamp Repository**!  
+This repository contains all the projects developed during my training in object-oriented programming and backend development using Java.
 
 ---
 
-## 🚀 How to Compile and Run
+## 📚 Project Index
 
-### **1️⃣ Compile**
+| Project | Description |
+|--------|-------------|
+| [🔗 Console Calculator](./Calculadora_Java) | A singly linked list implementation with insertion, deletion, search, and console interface, including unit tests. |
+| [🔗 Search and sort](./Busquedas_Ordenamientos_Java) | A modular calculator supporting basic operations, power, and square root with console interaction and in-memory history. |
+| [🔗 Simple Linked List](./Lista_Enlazada) | Descrip
 
-Make sure you have **Java** and an IDE like **IntelliJ IDEA** installed.
-Navigate to the `main/` folder on `linked_list/` in your terminal and run:
+---
+
+## 🚀 How to Clone
 
 ```bash
-javac *.java
+git clone https://github.com/tu-usuario/RepositorioJavaBootcamp.git
 ```
 
-### **2️⃣ Run**
+Open the project folder in your IDE (IntelliJ IDEA recommended), then navigate to the desired project directory.
 
-After compilation, execute:
+---
+
+
+# 👨‍💻 Java Bootcamp Projects
+
+Welcome to my **Java Bootcamp Repository**!  
+This repository contains Java-based academic projects built using **object-oriented programming**, applying **SOLID principles**, and focusing on clean code and reusable structures.
+
+Each subproject is designed to reinforce key programming concepts through practical exercises.
+
+---
+
+## 📚 Project Index
+
+| Project | Description |
+|--------|-------------|
+| [🧮 Console Calculator](./Calculadora_Java) | A console-based calculator that performs basic operations such as addition, subtraction, multiplication, division, power, and square root. Emphasizes modularity and code reusability, with in-memory history and input validation. |
+| [🔍 Search and Sort Algorithms](./Busquedas_Ordenamientos_Java) | Implements and compares classic search and sorting algorithms (e.g., linear search, binary search, bubble sort, insertion sort). Highlights algorithm efficiency, iteration vs recursion, and practical usage. |
+| [🔗 Simple Linked List](./Lista_Enlazada) | A singly linked list implementation including insertion, deletion, search by value and position, and list traversal. Provides a console interface and is backed by JUnit 5 unit tests for each operation. |
+
+---
+
+## 🧠 Design Approach
+
+All projects are developed using:  
+✅ Object-Oriented Programming (OOP)  
+✅ SOLID principles  
+✅ Modular structure and single responsibility  
+✅ Clean, commented, and readable code  
+✅ Input validation and user-friendly interfaces
+
+---
+
+## 🛠 Technologies
+- Java 17+
+
+- IntelliJ IDEA
+
+- JUnit 5 (for testing)
+
+- GitHub for version control
+
+---
+
+## 🚀 How to Use
+To get started with these projects:
+
+### 1️⃣ Clone the repository:
 
 ```bash
-java Main
+git clone https://github.com/D-Chevez/Bootcamp-Java-Kodigo.git
 ```
 
-You will see an interactive linked list menu in your console.
+Open the project folder in your preferred IDE (e.g., IntelliJ IDEA).
+
+Inside each project folder (e.g., Calculadora_Java, Lista_Enlazada), you will find its own README or instructions on how to compile, run, and interact with the program.
+
+Each project follows a clear modular structure and contains its own Main.java to launch the application.
 
 ---
 
-## 🖥️ How to Use
-### **1️⃣ From the console menu, select any of the following options:**
+## 🎯 Learning Objectives
+These projects aim to:
 
-- Insert at beginning
-- Delete from beginning
-- Print list
-- Check if list is empty
-- Show list size
-- Search for a value
-- Exit
+- Reinforce key Java concepts through hands-on practice
 
-### **2️⃣ Input the requested values and see the output.**
+- Develop logical thinking and problem-solving skills
 
----
+- Explore real-world implementations of core data structures
 
-## 🧪 Unit Testing
-The project includes a test class SimpleLinkedListTest located inside the test/ folder. It uses JUnit 5 and tests the following:
-
-- Insertion of nodes
-
-- Deletion of nodes
-
-- Deletion when list is empty
-
-- Size and empty checks
-
-- Value search with expected position
-
-To run the tests:
-
-- Right-click the test class in IntelliJ IDEA and choose Run
-
-- All test cases should pass successfully ✅
-
----
-
-## 📂 Project Structure
-
-```css
-Linked_List/
-├── main/
-│   ├── Node.java
-│   ├── LinkedList.java
-│   └── Main.java
-│
-└── test/
-    └── LinkedListTest.java
-```
-
----
-
-## 🎯 Purpose
-
-This project is intended to:
-
-✅ Strengthen your understanding of linked data structures  
-✅ Practice Java OOP principles  
-✅ Improve logic flow and recursive thinking  
-
-Enjoy learning and practicing Java with this clean and testable linked list project!
+- Practice writing testable and maintainable code
