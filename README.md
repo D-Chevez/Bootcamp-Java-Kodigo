@@ -1,4 +1,4 @@
-# 🎓 Java Bootcamp Projects - Daniel Chevez
+# 🎓 Java Bootcamp Projects
 
 Welcome to my **Java Bootcamp Repository**!  
 This repository contains all the projects developed during my training in object-oriented programming and backend development using Java.
