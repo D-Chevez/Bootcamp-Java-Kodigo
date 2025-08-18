@@ -1,24 +1,24 @@
 package model;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
 /**
  * Represents a generic unit of work in the system.
  */
 public abstract class WorkItem {
-    protected final String id;
-    protected String title;
+    protected final UUID id;
+    protected final String title;
     protected String description;
     protected LocalDate dueDate;
 
-    protected WorkItem(String id, String title, String description, LocalDate dueDate) {
-        this.id = id;
+    protected WorkItem(String title, String description) {
+        this.id = UUID.randomUUID();
         this.title = title;
         this.description = description;
-        this.dueDate = dueDate;
     }
 
-    public String getId() {
+    public UUID getId() {
         return id;
     }
 
@@ -26,20 +26,16 @@ public abstract class WorkItem {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public LocalDate getDueDate() {
         return dueDate;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public void setDueDate(LocalDate dueDate) {
